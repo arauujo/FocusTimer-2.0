@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #121212;
+  --text-color: #E3E3E3;
+  --controls-color: #E3E3E3;
+  --card-color: #2c2c2c;
+  --svg-fillcolor: #E3E3E3;
+  --buttons-hover-color: #2cceeb;
+  --forest-bgcolor: #25591F;
+  --rain-bgcolor: #02799D;
+  --coffeeshop-bgcolor: #6F4E37;
+  --fireplace-bgcolor: #FF5A00;
+}
+
+html.light {
+  --bg-color: white;
+  --text-color: #323238;
+  --controls-color: #323238;
+  --card-color: #E1E1E6;
+  --svg-fillcolor: #323238;
+}
+
+.selected svg {
+  fill: white;
+}
+
+#forest.selected, #forest:hover {
+  background-color: var(--forest-bgcolor)
+}
+
+#rain.selected, #rain:hover {
+  background-color: var(--rain-bgcolor)
+}
+
+#coffeeShop.selected, #coffeeShop:hover {
+  background-color: var(--coffeeshop-bgcolor)
+}
+
+#fireplace.selected, #fireplace:hover {
+  background-color: var(--fireplace-bgcolor)
+}
+
+button {
+  appearance: none;
+  border: none;
+}
+
+svg {
+  fill: var(--svg-fillcolor);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+#app {
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+#toggle-mode:hover {
+  cursor: pointer;
+  color: var(--buttons-hover-color);
+}
+
+.display {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#timer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: end;
+}
+
+#controls {
+  gap: 4rem;
+  border-radius: 999rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls button {
+  background-color: transparent;
+  border: 0;
+  font-size: 5rem;
+  color: var(--controls-color);
+  cursor: pointer;
+}
+
+#controls button:hover {
+  color: var(--buttons-hover-color);
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+  display: none;
+}
+
+#modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+#modes button {
+  border: 0;
+  background: var(--card-color);
+  cursor: pointer;
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+}
+
+#modes button:hover {
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+#modes button:active {
+  transition: all 100ms;
+  transform: none
+}
