@@ -1,3 +1,5 @@
+
+![focustimerv2](https://github.com/user-attachments/assets/173dd966-03dc-4972-9e51-9d606bdcbce9)
 ## 🖥️ Projeto
 
 O FocusTimer 2.0 é um desafio proposto pela trilha Explorer da Rocketseat. É um projeto em JavaScript projetado para ajudar os usuários a gerenciar seu tempo de forma eficiente, utilizando a técnica Pomodoro. O timer é totalmente interativo, com recursos que permitem ao usuário ajustar o tempo de foco, alterarnar entre diferentes modos de áudio ambiente, e escolher entre modos de exibição, como tema claro ou tema escuro.
